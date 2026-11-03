@@ -200,6 +200,7 @@ button, input, select { font: inherit; }
   .review-summary span { margin-right: 12px; }
   .footer-main { grid-template-columns: 1fr 1fr; gap: 35px 20px; }
   .footer-main > div:first-child { grid-column: span 2; }
+  .footer-main > div:nth-child(3) { grid-column: span 2; }
   .footer-bottom { flex-direction: column; gap: 9px; }
 }
 

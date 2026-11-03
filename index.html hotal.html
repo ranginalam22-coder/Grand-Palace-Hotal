@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#172720">
+  <meta name="description" content="Discover Grand Horizon Hotel: a secluded coastal escape with thoughtful hospitality, refined rooms, and unforgettable views.">
+  <title>Grand Horizon Hotel — A stay beyond the ordinary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#" aria-label="Grand Horizon Hotel home">
+        <span class="brand-mark" aria-hidden="true">H</span>
+        <span class="brand-name">Grand Horizon<small>Coastal Hotel &amp; Retreat</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#story">Our story</a>
+        <a href="#rooms">Stay</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#booking">Reserve your stay</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow">A quieter kind of extraordinary</p>
+        <h1 id="hero-title">Find your<br>far horizon.</h1>
+        <p class="hero-copy">Somewhere between the sea and the sky, there is a place to slow down, breathe deeply, and feel entirely at home.</p>
+        <a class="button-light" href="#story">Discover Grand Horizon <span aria-hidden="true">→</span></a>
+      </div>
+      <span class="hero-caption">A hidden coast · A world away</span>
+    </section>
+
+    <section class="booking-wrap" id="booking" aria-label="Plan your stay">
+      <form class="booking-card" id="booking-form">
+        <div class="booking-field"><label for="arrival">Check in</label><input id="arrival" name="arrival" type="date" required></div>
+        <div class="booking-field"><label for="departure">Check out</label><input id="departure" name="departure" type="date" required></div>
+        <div class="booking-field"><label for="guests">Guests</label><select id="guests" name="guests"><option>2 guests</option><option>1 guest</option><option>3 guests</option><option>4 guests</option></select></div>
+        <div class="booking-field"><label for="room-type">Room preference</label><select id="room-type" name="room"><option>Any room</option><option>Ocean View Suite</option><option>Garden Retreat</option><option>Horizon Penthouse</option></select></div>
+        <button class="booking-submit" type="submit">Check availability <span aria-hidden="true">→</span></button>
+      </form>
+      <p class="form-note" id="booking-message" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="intro" id="story">
+      <p class="eyebrow">Welcome to your somewhere</p>
+      <h2 class="serif">The art of getting<br>beautifully away.</h2>
+      <p>Set along a stretch of untouched coastline, Grand Horizon is made for the moments that stay with you: slow mornings, salt-air afternoons, and evenings that ask you to linger.</p>
+      <a class="text-link" href="#experiences">A little more about us <span aria-hidden="true">→</span></a>
+    </section>
+
+    <section class="experience" id="experiences">
+      <div class="experience-image" role="img" aria-label="Calm, warmly lit hotel lounge"></div>
+      <div class="experience-content">
+        <div>
+          <p class="eyebrow">Considered in every detail</p>
+          <h2 class="serif">A slower pace.<br>A richer stay.</h2>
+          <p>From the first warm welcome to the last sunset, every detail is thoughtfully in place. Find a favorite corner, follow the coastline, or simply let the day unfold.</p>
+          <a class="text-link" href="#amenities">Explore the experience <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="rooms" id="rooms">
+      <div class="section-heading">
+        <div><p class="eyebrow">Your own private retreat</p><h2 class="serif">Rooms with a view.</h2></div>
+        <p>Natural textures, considered comforts, and a horizon that never gets old. Find the space that feels like yours.</p>
+      </div>
+      <div class="room-grid">
+        <a class="room-card" href="#booking">
+          <div class="room-image"><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1100&q=82" alt="Soft, serene hotel room with a large bed" loading="lazy"></div>
+          <div class="room-info"><div><h3>Garden Retreat</h3><p>Quiet mornings, tucked among the greenery</p></div><span class="room-arrow" aria-hidden="true">↗</span></div>
+        </a>
+        <a class="room-card" href="#booking">
+          <div class="room-image"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1100&q=82" alt="Resort pool overlooking the coastline" loading="lazy"></div>
+          <div class="room-info"><div><h3>Ocean View Suite</h3><p>Wake up with the water at your window</p></div><span class="room-arrow" aria-hidden="true">↗</span></div>
+        </a>
+        <a class="room-card" href="#booking">
+          <div class="room-image"><img src="https://images.unsplash.com/photo-1617104678098-de229db51175?auto=format&fit=crop&w=1100&q=82" alt="Elegant hotel suite with warm natural finishes" loading="lazy"></div>
+          <div class="room-info"><div><h3>Horizon Penthouse</h3><p>Room to stretch out, space to see it all</p></div><span class="room-arrow" aria-hidden="true">↗</span></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="quote-band">
+      <p class="eyebrow">The feeling stays with you</p>
+      <blockquote>“The kind of place that reminds you what a holiday is supposed to feel like.”</blockquote>
+      <p>A note from a recent guest</p>
+    </section>
+
+    <section class="amenities" id="amenities">
+      <p class="eyebrow">A few of the finer things</p>
+      <h2 class="serif">Made for the way you unwind.</h2>
+      <div class="amenity-grid">
+        <div><span class="amenity-icon" aria-hidden="true">〰</span><h3>By the water</h3><p>Unhurried days beside the sea, just steps from your room.</p></div>
+        <div><span class="amenity-icon" aria-hidden="true">✳</span><h3>Wellness &amp; spa</h3><p>Restorative rituals and room to reset at your own pace.</p></div>
+        <div><span class="amenity-icon" aria-hidden="true">⌁</span><h3>Seasonal dining</h3><p>Thoughtful menus shaped by the coast and the season.</p></div>
+        <div><span class="amenity-icon" aria-hidden="true">☼</span><h3>Golden sunsets</h3><p>Evenings best spent outside, with nowhere else to be.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="footer-main">
+      <div>
+        <a class="brand" href="#" aria-label="Grand Horizon Hotel home"><span class="brand-mark" aria-hidden="true">H</span><span class="brand-name">Grand Horizon<small>Coastal Hotel &amp; Retreat</small></span></a>
+        <p class="footer-blurb">A thoughtful coastal hideaway for days that feel a little more like yours.</p>
+      </div>
+      <div><h3>Explore</h3><div class="footer-links"><a href="#story">Our story</a><a href="#rooms">Rooms &amp; suites</a><a href="#experiences">Experiences</a><a href="#amenities">Wellness &amp; dining</a></div></div>
+      <div><h3>Get in touch</h3><div class="footer-links"><a href="mailto:hello@grandhorizonhotel.com">hello@grandhorizonhotel.com</a><a href="tel:+18005550184">+1 (800) 555-0184</a><span>Coastal Highway<br>Pacific Shore, CA</span></div></div>
+      <div><h3>Stay in the know</h3><div class="footer-links"><span>Occasional notes from the coast.</span><a href="mailto:hello@grandhorizonhotel.com?subject=Grand%20Horizon%20newsletter">Join our mailing list&nbsp; →</a></div></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Grand Horizon Hotel. All rights reserved.</span><span>Thoughtfully away, always.</span></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
